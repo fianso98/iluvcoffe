@@ -12,5 +12,5 @@ export default new DataSource({
   password: 'pass123',
   database: 'postgres',
   entities: [Coffee, Flavor],
-  migrations: [SchemaSync1700564284446],
+  migrations: [CoffeeRefactor1700563538401, SchemaSync1700564284446],
 });

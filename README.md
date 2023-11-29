@@ -22,17 +22,21 @@ Follow these steps to set up and run the project locally.
    ```bash
    git clone https://github.com/fianso98/iluvcoffe.git
 
-2.  ```bash
+2.  
+    ```bash
     cd iluvcoffe
 
-3. ```bash
+3. 
+    ```bash
     npm install
 
 ## Setting Up Environment Variables
 
 Copy the environment file for setup:
 
-1. cp .env.example env
+1.  
+    ```bash
+    cp .env.example env
 
 ## Docker Compose Configuration
 The docker-compose.yml file includes essential configurations for PostgreSQL DB setup.
@@ -40,10 +44,14 @@ The docker-compose.yml file includes essential configurations for PostgreSQL DB 
 To launch the containers, use the following command:
 docker-compose.yml file contains the necessary configurations related to postgreSQL DB
 
-1. docker-compose up -d
+1.  
+    ```bash
+    docker-compose up -d
 
 The -d flag stands for detached mode, meaning it runs the containers in the background.
 
 ## Running the Application
 
-1. nest start
+1. 
+    ```bash
+    nest start

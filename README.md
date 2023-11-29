@@ -22,9 +22,11 @@ Follow these steps to set up and run the project locally.
    ```bash
    git clone https://github.com/fianso98/iluvcoffe.git
 
-2. cd iluvcoffe
+2.  ```bash
+    cd iluvcoffe
 
-3. npm install
+3. ```bash
+    npm install
 
 ## Setting Up Environment Variables
 

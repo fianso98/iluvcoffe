@@ -9,7 +9,7 @@ export class AppController {
   @Public()
   @Get()
   async getHello(): Promise<string> {
-    await new Promise((resolve) => setTimeout(resolve, 7000));
+    // await new Promise((resolve) => setTimeout(resolve, 7000));
     return this.appService.getHello();
   }
 }

@@ -3,7 +3,7 @@ import { Reflector } from '@nestjs/core';
 import { Request } from 'express';
 import { Observable } from 'rxjs';
 import { ConfigService } from '@nestjs/config';
-import { IS_PUBLIC_KEY } from 'src/common/decorators/public.decorator';
+import { IS_PUBLIC_KEY } from '../../decorators/public.decorator';
 
 @Injectable()
 export class ApiKeyGuard implements CanActivate {
@@ -20,6 +20,6 @@ export class ApiKeyGuard implements CanActivate {
     }
     const request = context.switchToHttp().getRequest<Request>();
     const apiKeyHeader = request.header('X-API-Key');
-    return apiKeyHeader === this.confingService.get('X-API-Key');
+    return apiKeyHeader === this.confingService.get('API_KEY');
   }
 }

@@ -11,7 +11,7 @@ import {
 import { CreateCoffeeDto } from './dto/create-coffee.dto';
 import { UpdateCoffeeDto } from './dto/update-coffee.dto';
 import { CoffeesService } from './coffees.service';
-import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
+import { PaginationQueryDto } from '../common/dto/pagination-query.dto';
 import { ApiTags } from '@nestjs/swagger';
 @ApiTags('coffees')
 @Controller('coffees')
